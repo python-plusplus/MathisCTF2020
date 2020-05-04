@@ -1,7 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
-
 
 @app.route('/')
 def intro():
@@ -19,9 +18,19 @@ def flag1():
 def flag2():
     return render_template('flag2.html')
 
-@app.route("/flag3")
+@app.route("/flag3", methods=['POST', 'GET'])
 def flag3():
-    return render_template('flag3.html')
+    try:
+        if request.form['classid'] == 'canyoufindtheonethatisdifferent?':
+            return render_template('flag3Scene1.html')
+        elif request.form['classid'] == 'math101':
+            return render_template('flag3Scene2.html')
+        elif request.form['classid'] == 'chess101':
+            return render_template('flag3Scene3.html')
+        else:
+            return render_template('flag3.html')
+    except:
+        return render_template('flag3.html')
 
 @app.route("/flag4")
 def flag4():
@@ -31,9 +40,15 @@ def flag4():
 def flag0():
     return render_template('flag0.html')
 
-@app.route("/flag69")
+@app.route("/flag69", methods=['POST', 'GET'])
 def flag69():
-    return render_template('flag69.html')
+    try:
+        if request.form['input1'] == '4408' and request.form['input2'] == '4700' and request.form['input3'] == '8012' and request.form['input4'] == '6753':
+            return render_template('flag69rightans.html')
+        else:
+            return render_template('flag69wrong.html')
+    except:
+        return render_template('flag69.html')
 
 
 if __name__ == '__main__':

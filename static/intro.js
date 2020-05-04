@@ -53,9 +53,9 @@ function typeWriter(id, ar) {
       eHeader = element.children("h1"), //Header element
       eParagraph = element.children("p"), //Subheader element
       jump = $("#jump");
-      audio = new Audio('http://download1941.mediafire.com/8ubgkfxfpjvg/sy69vmgr2ogdbjd/Scary+Jumpscare+Sound+Effect.wav');
+      audio = new Audio('/Scary Jumpscare Sound Effect(1).wav');
       key = $("#key");
-      keyaudio = new Audio('https://download1594.mediafire.com/7y97wqfbu2vg/1671k5b9ea22a17/mybmp.wav');
+      keyaudio = new Audio('');
       jump.hide();
       key.hide();
   // Determine if animation should be typing or backspacing
@@ -100,7 +100,7 @@ function typeWriter(id, ar) {
       }
       else if (a == 15){
         jumpScare(key, keyaudio, "keyimg", "https://www.mediafire.com/convkey/f0d4/6vy3uv5krj01xy1zg.jpg");
-        setTimeout(function(){ typeWriter(id, ar); }, 1000);
+        setTimeout(function(){ typeWriter(id, ar); }, 4000);
       }
       else if (a == 16){
         setTimeout(function(){ typeWriter(id, ar); }, 100000);
