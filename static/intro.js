@@ -3,7 +3,7 @@ var i = 0,
     a = 0,
     isBackspacing = false,
     isParagraph = false,
-     audio = new Audio('https://cdn-16.anonfile.com/191eQdvbo5/44d186e5-1588574190/Scary%20Jumpscare%20Sound%20Effect(1).wav'),
+    audio = new Audio('https://cdn-16.anonfile.com/191eQdvbo5/44d186e5-1588574190/Scary%20Jumpscare%20Sound%20Effect(1).wav'),
     keyaudio = new Audio('https://cdn-09.anonfile.com/Xf29Q4vco8/5f93d571-1588574264/mybmp.wav');
 
 
