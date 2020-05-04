@@ -2,9 +2,7 @@
 var i = 0,
     a = 0,
     isBackspacing = false,
-    isParagraph = false,
-    audio = new Audio('https://cdn-16.anonfile.com/191eQdvbo5/44d186e5-1588574190/Scary%20Jumpscare%20Sound%20Effect(1).wav'),
-    keyaudio = new Audio('https://cdn-09.anonfile.com/Xf29Q4vco8/5f93d571-1588574264/mybmp.wav');
+    isParagraph = false;
 
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".
@@ -96,10 +94,12 @@ function typeWriter(id, ar) {
         setTimeout(function(){ typeWriter(id, ar); }, 4000);
       }
       else if (a == 12){
+        var audio = new Audio('https://cdn-16.anonfile.com/191eQdvbo5/44d186e5-1588574190/Scary%20Jumpscare%20Sound%20Effect(1).wav');
         jumpScare(jump, audio, "jumpimg", "https://i.ytimg.com/vi/TTQ8Oh_aBiA/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBtfiP2-jF28NHngeIOG-TmtFO16w");
         setTimeout(function(){ typeWriter(id, ar); }, 4000);
       }
       else if (a == 15){
+        var keyaudio = new Audio('https://cdn-09.anonfile.com/Xf29Q4vco8/5f93d571-1588574264/mybmp.wav');
         jumpScare(key, keyaudio, "keyimg", "https://www.mediafire.com/convkey/f0d4/6vy3uv5krj01xy1zg.jpg");
         setTimeout(function(){ typeWriter(id, ar); }, 4000);
       }
