@@ -94,12 +94,12 @@ function typeWriter(id, ar) {
         setTimeout(function(){ typeWriter(id, ar); }, 4000);
       }
       else if (a == 12){
-        var audio = $('#myAudio');
+        var audio = $('#myAudio')[0];
         jumpScare(jump, audio, "jumpimg", "https://i.ytimg.com/vi/TTQ8Oh_aBiA/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBtfiP2-jF28NHngeIOG-TmtFO16w");
         setTimeout(function(){ typeWriter(id, ar); }, 4000);
       }
       else if (a == 15){
-        var keyaudio = $('#mykeyaudio');
+        var keyaudio = $('#mykeyaudio')[0];
         jumpScare(key, keyaudio, "keyimg", "https://www.mediafire.com/convkey/f0d4/6vy3uv5krj01xy1zg.jpg");
         setTimeout(function(){ typeWriter(id, ar); }, 4000);
       }
