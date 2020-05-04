@@ -53,9 +53,9 @@ function typeWriter(id, ar) {
       eHeader = element.children("h1"), //Header element
       eParagraph = element.children("p"), //Subheader element
       jump = $("#jump");
-      audio = new Audio('/Scary Jumpscare Sound Effect(1).wav');
+      audio = new Audio('https://cdn-16.anonfile.com/191eQdvbo5/44d186e5-1588574190/Scary%20Jumpscare%20Sound%20Effect(1).wav');
       key = $("#key");
-      keyaudio = new Audio('');
+      keyaudio = new Audio('https://cdn-09.anonfile.com/Xf29Q4vco8/5f93d571-1588574264/mybmp.wav');
       jump.hide();
       key.hide();
   // Determine if animation should be typing or backspacing
